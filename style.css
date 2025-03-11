@@ -1,0 +1,103 @@
+@font-face {
+  font-family: FiraSans-SemiBold;
+  src: url(assets/fonts/Fira_Sans/FiraSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: FiraSans-Medium;
+  src: url(assets/fonts/Fira_Sans/FiraSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: WorkSans-Regular;
+  src: url(assets/fonts/Work_Sans/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: CherrySwash;
+  src: url(assets/fonts/Cherry_Swash/CherrySwash-Regular.ttf);
+}
+
+/* Resets start*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Resets end */
+
+h1 {
+  font-family: FiraSans-SemiBold;
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 32;
+}
+
+p {
+  font-family: WorkSans-Regular;
+  font-size: 16px;
+}
+
+p.logoText {
+  font-family: CherrySwash;
+  font-size: 32px;
+}
+
+p.introParagraph {
+  font-size: 20px;
+}
+
+/* Settings specifically for screen size 700px or larger start*/
+
+@media (width>=700px) {
+  body {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+/* Settings specifically for screen size 700px or larger end*/
+
+/* Settings for the upper half of main start*/
+
+.introSection {
+  max-width: 40%;
+  margin: 0 20%;
+}
+
+/* Settings for the upper half of main end*/
+
+/* Settings for the lower half of main start*/
+
+.infoSection {
+  background-color: #41461f;
+  border-top-right-radius: 30px;
+  margin-right: 20%;
+  position: relative;
+}
+
+.infoCard {
+  background-color: #e5decd;
+  padding: 1em;
+  margin: 2em 1em;
+  z-index: 20;
+}
+.infoCard_1 {
+  grid-column: 2;
+  border-top-left-radius: 30px;
+}
+
+.infoCard_3 {
+  border-top-right-radius: 30px;
+}
+
+/* Settings for the lower half of main end*/
