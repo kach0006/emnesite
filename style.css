@@ -176,6 +176,8 @@ nav {
   color: #000000;
 }
 
+/* Settings for white section below the header and large image banner start*/
+
 .introSection {
   max-width: 100%;
   margin: 0 0;
@@ -204,9 +206,9 @@ nav {
   object-fit: contain;
 }
 
-/* Settings for the upper half of main end*/
+/* Settings for white section below the header and large image banner ends*/
 
-/* Settings for the lower half of main start*/
+/* Settings for the lower half with info cards start*/
 
 .infoSection {
   position: relative;
@@ -223,6 +225,7 @@ nav {
 
 .infoCard {
   background-color: #e5decd;
+  max-width: 380px;
   padding: 1em;
   margin-top: 2em;
   text-align: center;
@@ -235,7 +238,7 @@ nav {
 
 .infoCard img {
   object-fit: contain;
-  max-height: 100px;
+  max-height: 100%;
 }
 
 .infoCard_1 {
@@ -261,4 +264,4 @@ nav {
   font-size: 14px;
 }
 
-/* Settings for the lower half of main end*/
+/* Settings for the lower half with info cards end*/

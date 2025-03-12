@@ -12,12 +12,10 @@
   object-fit: cover;
 }
 
-
 .bannerBox_1 {
   grid-column: 2/3;
   grid-row: 2;
-  }
-
+}
 
 .bannerBox_2 {
   grid-column: 2/3;
@@ -28,10 +26,4 @@
   display: grid;
   grid-template-columns: 20% 2fr 2fr 2fr 20%;
   margin: 0;
-}
-
-/*
-.infoSection {
-  display: grid;
-  grid-template-columns: 20% 1fr 20%;
 }
