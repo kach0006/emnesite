@@ -13,47 +13,16 @@
 }
 
 
-
 .bannerBox_1 {
   grid-column: 2/3;
   grid-row: 2;
-  color: #000000;
-  background-color: #F8F6F7;
-  border-color: #E5DECD;
-  align-self: stretch;
-  border-top-left-radius: 30px;
-  margin: 0;
   }
 
 
 .bannerBox_2 {
   grid-column: 2/3;
   grid-row: 3;
-  align-self: center;
-  border-bottom-left-radius: 30px;
-  margin: 0;
 }
-
-.bannerBox {
-  padding: 5px 5px 5px 15px;
-  display: flex;
-  gap: 2em;
-  align-items: center;
-  justify-content: left;
-}
-
-.bannerBox img {
-  display: flex;
-  object-fit: cover;
-  max-height: 40px;
-}
-
-.bannerBox a {
-  text-decoration: none;
-  color: #000000;
-}
-
-
 
 .infoCards {
   display: grid;

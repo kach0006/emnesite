@@ -34,6 +34,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /* Resets end */
@@ -49,31 +51,41 @@ nav {
 
 nav a {
   text-decoration: none;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
   color: #000000;
 }
 
 nav img {
   display: flex;
+  flex-basis: 22%;
   object-fit: contain;
   height: 100px;
   width: auto;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 50%;
-  margin-right: 50%;
+  padding: 2%;
+}
+
+nav p {
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: contain;
+  flex-basis: 20%;
+  object-fit: contain;
+  height: 100px;
+  width: auto;
+  margin: auto;
+  padding: 0;
 }
 
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 80%;
+  flex-basis: 57%;
   justify-content: space-between;
   list-style-type: none;
-  padding: 0;
-  margin: 2em 2em 2em 0;
-  gap: 10px 20px;
+  padding: 0 1%;
+  margin: 0;
   align-items: center;
 }
 
@@ -101,7 +113,7 @@ p {
 
 .logoText {
   font-family: CherrySwash;
-  font-size: 32px;
+  font-size: 28px;
   color: #000000;
 }
 
@@ -131,11 +143,54 @@ nav {
 
 /* Settings for the upper half of main start*/
 
+.bannerBox_1 {
+  color: #000000;
+  background-color: #f8f6f7;
+  border: 1px solid #e5decd;
+  border-top-left-radius: 30px;
+  margin: 0;
+}
+
+.bannerBox_2 {
+  border: 1px solid #e5decd;
+  border-bottom-left-radius: 30px;
+  margin: 0;
+}
+
+.bannerBox {
+  padding: 5px 5px 5px 15px;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: left;
+}
+
+.bannerBox img {
+  display: flex;
+  object-fit: cover;
+  max-height: 40px;
+}
+
+.bannerBox a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .introSection {
   max-width: 100%;
   margin: 0 0;
   position: relative;
   z-index: 2;
+}
+
+.introSection p {
+  max-width: 40%;
+  margin: 0 20% 5% 20%;
+}
+
+.introSection h1 {
+  margin: 3% 0 1% 20%;
+  max-width: 40%;
 }
 
 .background-container {
