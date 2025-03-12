@@ -109,11 +109,6 @@ p.introParagraph {
   font-size: 20px;
 }
 
-.cardButton {
-  font-family: FiraSans-Medium;
-  font-size: 16px;
-}
-
 main {
   background-color: #f8f6f7;
   color: #000000;
@@ -137,32 +132,36 @@ nav {
 /* Settings for the upper half of main start*/
 
 .introSection {
-  max-width: 40%;
-  margin: 0 20%;
+  max-width: 100%;
+  margin: 0 0;
   position: relative;
+  z-index: 2;
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: -10%;
+  width: 350px;
+  height: 350px;
+  z-index: -2;
+  object-fit: contain;
 }
 
 /* Settings for the upper half of main end*/
 
 /* Settings for the lower half of main start*/
 
-/*
-.infoSection {
-  background-color: #41461f;
-  border-top-right-radius: 30px;
-  margin-right: 20%;
-  position: relative;
-}
-  */
-
 .infoSection {
   position: relative;
+  z-index: 2;
 }
 
 .background-object {
   position: absolute;
   background-color: #41461f;
-  width: 80%;
+  width: 85%;
   height: 100%;
   border-top-right-radius: 30px;
 }
@@ -173,6 +172,15 @@ nav {
   margin-top: 2em;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoCard img {
+  object-fit: contain;
+  max-height: 100px;
 }
 
 .infoCard_1 {
@@ -185,6 +193,17 @@ nav {
   border-top-right-radius: 30px;
   margin-left: 1em;
   margin-right: 1em;
+}
+
+.cardButton {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #000000;
+  border-radius: 0;
+  color: #000000;
+  text-decoration: none;
+  font-family: FiraSans-Medium;
+  font-size: 14px;
 }
 
 /* Settings for the lower half of main end*/
