@@ -13,6 +13,11 @@
 }
 
 @font-face {
+  font-family: WorkSans-Medium;
+  src: url(assets/fonts/Work_Sans/static/WorkSans-Medium.ttf);
+}
+
+@font-face {
   font-family: CherrySwash;
   src: url(assets/fonts/Cherry_Swash/CherrySwash-Regular.ttf);
 }
@@ -46,6 +51,7 @@ nav a {
   text-decoration: none;
   margin-top: auto;
   margin-bottom: auto;
+  color: #000000;
 }
 
 nav img {
@@ -55,6 +61,8 @@ nav img {
   width: auto;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 
 nav ul {
@@ -66,6 +74,7 @@ nav ul {
   padding: 0;
   margin: 2em 2em 2em 0;
   gap: 10px 20px;
+  align-items: center;
 }
 
 /*Navigation menu ends */
@@ -76,7 +85,8 @@ h1 {
 }
 
 h2 {
-  font-size: 32;
+  font-family: FiraSans-Medium;
+  font-size: 18px;
 }
 
 p {
@@ -84,15 +94,35 @@ p {
   font-size: 16px;
 }
 
-p.logoText {
+.desktopMenuItem {
+  font-family: WorkSans-Medium;
+  font-size: 16px;
+}
+
+.logoText {
   font-family: CherrySwash;
   font-size: 32px;
+  color: #000000;
 }
 
 p.introParagraph {
   font-size: 20px;
 }
 
+.cardButton {
+  font-family: FiraSans-Medium;
+  font-size: 16px;
+}
+
+main {
+  background-color: #f8f6f7;
+  color: #000000;
+}
+
+nav {
+  background-color: #e5decd;
+  color: #000000;
+}
 /* Settings specifically for screen size 700px or larger start*/
 
 @media (width>=700px) {
@@ -109,32 +139,52 @@ p.introParagraph {
 .introSection {
   max-width: 40%;
   margin: 0 20%;
+  position: relative;
 }
 
 /* Settings for the upper half of main end*/
 
 /* Settings for the lower half of main start*/
 
+/*
 .infoSection {
   background-color: #41461f;
   border-top-right-radius: 30px;
   margin-right: 20%;
   position: relative;
 }
+  */
+
+.infoSection {
+  position: relative;
+}
+
+.background-object {
+  position: absolute;
+  background-color: #41461f;
+  width: 80%;
+  height: 100%;
+  border-top-right-radius: 30px;
+}
 
 .infoCard {
   background-color: #e5decd;
   padding: 1em;
-  margin: 2em 1em;
-  z-index: 20;
+  margin-top: 2em;
+  text-align: center;
+  position: relative;
 }
+
 .infoCard_1 {
   grid-column: 2;
   border-top-left-radius: 30px;
+  margin-right: 1em;
 }
 
 .infoCard_3 {
   border-top-right-radius: 30px;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 /* Settings for the lower half of main end*/
