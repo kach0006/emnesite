@@ -33,6 +33,43 @@ img {
 
 /* Resets end */
 
+/*Navigation menu starts */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+nav a {
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav img {
+  display: flex;
+  object-fit: contain;
+  height: 100px;
+  width: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 80%;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 2em 2em 2em 0;
+  gap: 10px 20px;
+}
+
+/*Navigation menu ends */
+
 h1 {
   font-family: FiraSans-SemiBold;
   font-size: 35px;
