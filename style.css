@@ -47,6 +47,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
+  position: relative;
+  height: auto;
 }
 
 nav a {
@@ -57,13 +59,14 @@ nav a {
 
 nav img {
   display: flex;
-  flex-basis: 22%;
+  flex-basis: 21%;
   object-fit: contain;
   height: 100px;
   width: auto;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 2%;
+  z-index: 1;
+  position: absolute;
 }
 
 nav p {
@@ -76,6 +79,7 @@ nav p {
   width: auto;
   margin: auto;
   padding: 0;
+  z-index: 2;
 }
 
 nav ul {
