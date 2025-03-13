@@ -24,6 +24,16 @@
 
 .infoCards {
   display: grid;
-  grid-template-columns: 20% 2fr 2fr 2fr 20%;
-  margin: 0;
+  grid-template-columns: 20% 1fr 1fr 1fr 20%;
+}
+
+@media (width>=2000px) {
+  .infoCards {
+    grid-template-columns: 20% 1fr 1fr 1fr 25%;
+  }
+}
+
+.footerItems {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
