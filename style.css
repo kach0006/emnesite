@@ -59,7 +59,6 @@ nav a {
 
 nav img {
   display: flex;
-  flex-basis: 21%;
   object-fit: contain;
   height: 150%;
   z-index: 1;
@@ -74,19 +73,24 @@ nav p {
   object-fit: contain;
   width: auto;
   margin: auto;
-  padding: 2vh;
+  padding: 2vh 0;
   z-index: 2;
 }
 
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 57%;
+  flex-basis: 60%;
   justify-content: space-between;
   list-style-type: none;
   padding: 0 1%;
   margin: 0;
   align-items: center;
+}
+
+li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 /*Navigation menu ends */
@@ -212,27 +216,15 @@ nav {
 }
 
 .infoCard {
-  background-color: #e5decd;
-  max-width: 380px;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  text-align: center;
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
+  background-color: #e5decd;
+  padding: 1em 1em 2em 1em;
+  margin: 2em 0;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-}
-
-.infoCard img {
-  object-fit: contain;
-  max-width: 90%;
-  max-height: 45%;
-}
-
-.infoCard h2,
-p {
-  max-width: 80%;
+  max-width: 415px;
 }
 
 .infoCard_1 {
@@ -249,8 +241,14 @@ p {
   border-top-right-radius: 30px;
   margin-right: 1em;
 }
+.infoCard p {
+  padding-bottom: 2em;
+  max-width: 265px;
+}
 
 .cardButton {
+  position: absolute;
+  bottom: 1em;
   padding: 10px 15px;
   border: 1px solid #000000;
   border-radius: 0;
@@ -258,6 +256,10 @@ p {
   text-decoration: none;
   font-family: FiraSans-Medium;
   font-size: 14px;
+}
+
+.cardButton:hover {
+  background-color: #f1c64c;
 }
 
 /* Settings for the lower half with info cards end*/
@@ -313,6 +315,8 @@ footer {
   font-family: WorkSans-Regular;
   font-size: 16px;
   padding-top: 2em;
+  padding-bottom: 2em;
+  text-decoration: none;
 }
 
 .contactButton {
