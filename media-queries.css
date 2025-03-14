@@ -84,6 +84,10 @@
     grid-template-rows: 90% 5% 5%;
   }
 
+  .bannerBoxTip {
+    font-size: 12px;
+  }
+
   p {
     font-size: 12px;
     line-height: 2;
@@ -91,7 +95,7 @@
 
   h1 {
     font-size: 22px;
-    line-height: normal;
+    line-height: 1.5;
   }
 
   h2 {
@@ -118,14 +122,16 @@
     display: none;
   }
 
+  .bbImage {
+    display: none;
+  }
   .infoCards {
     display: block;
-    
-    
   }
   .infoCard {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
     margin: 0;
   }
 
@@ -147,5 +153,29 @@
     margin-bottom: 1em;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
+    border-top-right-radius: 0;
   }
 
+  .bottomBanner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bbBox {
+    background-color: #f8f6f7;
+    border-color: #f8f6f7;
+  }
+
+  .bbBox img {
+    margin: 2em 0;
+  }
+
+  .bbBox h2 {
+    font-size: 18px;
+  }
+
+  .bbBox_3 {
+    order: 1;
+  }
+}
