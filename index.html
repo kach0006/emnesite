@@ -6,6 +6,7 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="grid.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
 
     <!-- Favicon setup start -->
 
@@ -23,10 +24,10 @@
   <body>
     <header>
       <nav>
-        <a class="menuImage" href="#"><img src="images/alpaka logo_offwhite.webp" alt="" /></a>
+        <a class="menuImage" href="#"><img class="logo" src="images/alpaka logo_offwhite.webp" alt="" /></a>
         <p><a class="logoText" href="#">Sydhavnstippen</a></p>
 
-        <ul>
+        <ul class="menu">
           
           <li class="desktopMenuItem"><a href="#">OM TIPPEN</a></li>
 
@@ -36,19 +37,24 @@
 
           <li class="desktopMenuItem"><a href="#">PRAKTISK INFO</a></li>
         </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </nav>
     </header>
     <main>
       <section class="topBanner">
         <img class="bannerImage" src="images/placeholder.png" alt="" />
         <div class="bannerBox_1 bannerBox">
-          <a class="bannerboxContent" href="https://www.google.dk/maps/place/Sydhavnstippen/@55.6370847,12.5319893,850m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46525489daa184eb:0xd754e2a422b99807!8m2!3d55.6370817!4d12.5345642!16s%2Fg%2F11cn5kcfcf?entry=ttu&g_ep=EgoyMDI1MDMxMC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank"><img src="images/alpaka logo_offwhite.webp" /></a>
-          <p class="bannerBoxContent">Fragtvej 7, 2450 København SV</p>
-          <a class="bannerboxContent" href="#"><img src="images/alpaka logo_offwhite.webp" /></a>
+          <a href="https://www.google.dk/maps/place/Sydhavnstippen/@55.6370847,12.5319893,850m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46525489daa184eb:0xd754e2a422b99807!8m2!3d55.6370817!4d12.5345642!16s%2Fg%2F11cn5kcfcf?entry=ttu&g_ep=EgoyMDI1MDMxMC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank"><img src="images/alpaka logo_offwhite.webp" /></a>
+          <p>Fragtvej 7, 2450 København SV</p>
+          <a href="#"><img src="images/alpaka logo_offwhite.webp" /></a>
         </div>
         <div class="bannerBox_2 bannerBox">
-          <a class="bannerboxContent" href="#"><img src="images/alpaka logo_offwhite.webp" /></a>
-          <p class="bannerBoxContent"><a class="bannerBoxContent" href="https://www.google.com/maps/dir//Sydhavnstippen+Naturpleje,+Fragtvej+7,+2450+K%C3%B8benhavn/@55.6370846,12.5296933,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46525489daa184eb:0xd754e2a422b99807!2m2!1d12.5345642!2d55.6370817?entry=ttu&g_ep=EgoyMDI1MDMxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Se rute på kort</p></a>
+          <a href="#"><img src="images/alpaka logo_offwhite.webp" /></a>
+          <p><a href="https://www.google.com/maps/dir//Sydhavnstippen+Naturpleje,+Fragtvej+7,+2450+K%C3%B8benhavn/@55.6370846,12.5296933,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46525489daa184eb:0xd754e2a422b99807!2m2!1d12.5345642!2d55.6370817?entry=ttu&g_ep=EgoyMDI1MDMxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Se rute på kort</p></a>
         </div>
       </section>
 
@@ -58,7 +64,7 @@
           <h1 class="introAlign">Sydhavnstippen byder på unikke natur- og dyre&shy;oplevelser for alle aldre</h1>
           <p class="introAlign">
             I Københavns Sydhavn, kun 10 minutters gang fra metro og bus, finder du kultur- og
-            natur&shy;området Sydhavns&shy;tippen - også kaldet Tippen i daglig tale. I dette
+            natur&shy;området Sydhavns&shy;tippen - også kaldet Tippen i daglig tale. </p><p>I dette
             natur&shy;skønne område kan du møde frit&shy;gående dyr i årets varmeste måneder.
           </p>
           <img class="sunnyObject" src="images/sol.webp" alt="sol" /></div>
@@ -69,25 +75,25 @@
           <div class="background-object"></div>
           <div class="infoCards">
             <div class="infoCard_1 infoCard">
-              <a href="#"><img src="images/alpaka.webp" alt="placeholder" /></a>
-              <h2 class="cardContent">Oplev dyrene</h2>
+              <a href="#"><img class="leftInfoCard" src="images/alpaka.webp" alt="placeholder" /></a>
+              <div class="rightInfoCard"><h2 class="cardContent">Oplev dyrene</h2>
               <p>Alt om Sydhavns&shy;tippens dyr og hvor du kan møde dem.</p>
               <div class="filler"></div>
-              <a class="cardButton" href="#">VIS MERE</a>
+              <a class="cardButton" href="#">VIS MERE</a></div>
             </div>
             <div class="infoCard_2 infoCard">
               <a href="#"><img src="images/aktiviteter.webp" alt="placeholder" /></a>
-              <h2>Aktiviteter</h2>
+              <div class="rightInfoCard"><h2>Aktiviteter</h2>
               <p>Få overblik over kommende aktivi&shy;teter på Tippen.</p>
               <div class="filler"></div>
-              <a class="cardButton" href="#">VIS MERE</a>
+              <a class="cardButton" href="#">VIS MERE</a></div>
             </div>
             <div class="infoCard_3 infoCard">
               <a href="#"><img src="images/frivillig.webp" alt="placeholder" /></a>
-              <h2>Bliv frivillig</h2>
+              <div class="rightInfoCard"><h2>Bliv frivillig</h2>
               <p>Gør en forskel for miljøet i det store natur&shy;område.</p>
               <div class="filler"></div>
-              <a class="cardButton" href="#">VIS MERE</a>
+              <a class="cardButton" href="#">VIS MERE</a></div>
             </div>
           </div>
         </section>
@@ -108,5 +114,6 @@
     <section class="footerItems"><a class="contactButton" href="#">Kontakt</a><a href="#">Cookie- og privatlivspolitik</a><a class="copyrightTag" href="#">&#169; Kamilla Christiansen</a><a class="someIcon" href="#">ICON</a></section>
     <section class="footerAddress"><p>Sydhavnstippen<br>Fragtvej 7<br>2450 København SV</p></section>
   </footer>
+  <script src="menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,151 @@
+@media (width>=2000px) {
+  .infoCards {
+    grid-template-columns: 20% 1fr 1fr 1fr 25%;
+  }
+}
+@media (width>=1051px) {
+  .burger {
+    display: none;
+  }
+}
+@media (width<=1050px) {
+  /*Kode fra undervisning */
+
+  .menu {
+    display: none;
+  }
+
+  nav {
+    justify-content: left;
+    align-items: center;
+  }
+
+  nav p {
+    flex-basis: 80%;
+  }
+
+  .burger {
+    display: block;
+    align-items: flex-end;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    flex-basis: 10%;
+  }
+
+  .burger .line {
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #000000;
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 20px 0;
+  }
+
+  nav.active .menu a {
+    font-size: 20px;
+  }
+
+  .logoText {
+    font-size: 22px;
+  }
+
+  .topBanner {
+    grid-template-columns: 1fr 80%;
+    grid-template-rows: 90% 5% 5%;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  h1 {
+    font-size: 22px;
+    line-height: normal;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .sunnyObject {
+    display: none;
+  }
+
+  .introSection h1,
+  .introSection p {
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 20%;
+  }
+
+  .cardButton {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .background-object {
+    display: none;
+  }
+
+  .infoCards {
+    display: block;
+    
+    
+  }
+  .infoCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+
+  .infoCard_1 {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    border-bottom-left-radius: 30px;
+  }
+
+  .infoCard_2 {
+    margin-right: 2em;
+    margin-bottom: 1em;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .infoCard_3 {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+

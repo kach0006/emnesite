@@ -60,7 +60,7 @@ nav img {
   display: flex;
   object-fit: contain;
   height: 150%;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 25%;
 }
@@ -69,7 +69,7 @@ nav p {
   display: flex;
   object-fit: contain;
   flex-basis: 20%;
-  object-fit: contain;
+
   width: auto;
   margin: auto;
   padding: 2vh 0;
@@ -120,10 +120,6 @@ p {
   color: #000000;
 }
 
-p.introParagraph {
-  font-size: 20px;
-}
-
 main {
   background-color: #f8f6f7;
   color: #000000;
@@ -169,22 +165,32 @@ nav {
   color: #000000;
 }
 
+.bannerBoxContent {
+  font-size: smaller;
+}
+
 /* Settings for white section below the header and large image banner start*/
 
 .introSection {
   max-width: 100%;
-  margin: 0 0;
+  margin: 3em 0;
   position: relative;
   z-index: 2;
 }
 
 .introSection p {
   max-width: 40%;
-  margin: 0 20% 5% 20%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 .introSection h1 {
-  margin: 3% 0 1% 20%;
+  margin: 3% 0 1.5em 20%;
+  max-width: 40%;
+}
+
+.subSection h1 {
+  margin: 7% 0 1.5em 20%;
   max-width: 40%;
 }
 
