@@ -44,3 +44,70 @@
   grid-template-columns: 1fr 1fr;
   gap: 1%;
 }
+
+/*Bottom banner section starts */
+
+.bottomBanner {
+  display: grid;
+  grid-template-columns: 20% 1fr 1fr 4% 20%;
+  grid-template-rows: 2em 1fr 1fr 2em;
+  position: relative;
+  z-index: 2;
+}
+
+.bbImage {
+  grid-column: 1/5;
+  grid-row: 1/5;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.bbBox_1 {
+  grid-column: 2;
+  grid-row: 2;
+  border-top-left-radius: 30px;
+}
+
+.bbBox_2 {
+  grid-column: 3;
+  grid-row: 2;
+  border-top-right-radius: 30px;
+}
+
+.bbBox_3 {
+  grid-column: 2;
+  grid-row: 3;
+  border-bottom-left-radius: 30px;
+}
+
+.bbBox_4 {
+  grid-column: 3;
+  grid-row: 3;
+  border-bottom-right-radius: 30px;
+}
+
+.bbBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5decd;
+  border: 1px solid #e5decd;
+  padding: 4%;
+}
+
+.bbBox img {
+  display: flex;
+  object-fit: contain;
+  max-height: 360px;
+  width: auto;
+}
+
+.bbBox a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*Bottom banner section ends */
