@@ -1,16 +1,15 @@
-@media (width>=2000px) {
+@media screen and (max-width: 2000px) {
   .infoCards {
     grid-template-columns: 20% 1fr 1fr 1fr 25%;
   }
 }
-@media (width>=1051px) {
+@media screen and (max-width: 1051px) {
   .burger {
     display: none;
   }
 }
-@media (width<=1050px) {
-  /*Kode fra undervisning */
 
+@media screen and (max-width: 1050px) {
   .menu {
     display: none;
   }
@@ -24,6 +23,7 @@
     flex-basis: 80%;
   }
 
+  /* .burger code and nav.active code shared in class */
   .burger {
     display: block;
     align-items: flex-end;
@@ -80,7 +80,7 @@
   }
 
   .topBanner {
-    grid-template-columns: 1fr 80%;
+    grid-template-columns: 1fr 50%;
     grid-template-rows: 90% 5% 5%;
   }
 
@@ -110,7 +110,7 @@
   .introSection p {
     max-width: 100%;
     margin-left: 10%;
-    margin-right: 20%;
+    margin-right: 30%;
   }
 
   .cardButton {
@@ -125,32 +125,45 @@
   .bbImage {
     display: none;
   }
+
   .infoCards {
     display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
+
   .infoCard {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    margin: 0;
+    margin-bottom: 1em;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .rightInfoCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 350px;
   }
 
   .infoCard_1 {
     margin-left: 2em;
-    margin-bottom: 1em;
     border-bottom-left-radius: 30px;
   }
 
   .infoCard_2 {
     margin-right: 2em;
-    margin-bottom: 1em;
+
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
   }
 
   .infoCard_3 {
     margin-left: 2em;
-    margin-bottom: 1em;
+
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
     border-top-right-radius: 0;
@@ -165,6 +178,7 @@
   .bbBox {
     background-color: #f8f6f7;
     border-color: #f8f6f7;
+    margin-right: 30%;
   }
 
   .bbBox img {
@@ -177,5 +191,31 @@
 
   .bbBox_3 {
     order: 1;
+  }
+
+  .footerItems {
+    display: flex;
+  }
+
+  .footerItems a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topBanner {
+    grid-template-columns: 1fr 80%;
+    grid-template-rows: 90% 5% 5%;
+  }
+
+  .introSection h1,
+  .introSection p {
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .bbBox {
+    margin-right: 0;
   }
 }

@@ -156,8 +156,11 @@ nav {
 
 .bannerBox img {
   display: flex;
+  margin-left: 5px;
+  padding: 1px;
   object-fit: cover;
-  max-height: 40px;
+  max-height: 30px;
+  max-width: auto;
 }
 
 .bannerBox a {
@@ -292,7 +295,6 @@ nav {
 }
 
 .cardButton {
-  position: absolute;
   bottom: 1em;
   padding: 10px 15px;
   border: 1px solid #000000;
@@ -320,6 +322,15 @@ nav {
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
+
+.bbBox_4 img {
+  border: 5px solid #ffffff;
+}
+
+.bbBox_4 img:hover {
+  border-color: #000000;
+}
+
 /* Settings for the lower half with info cards end*/
 
 /*Settings for the footer starts */
@@ -368,6 +379,10 @@ footer {
   height: 4px;
 }
 
+.footerItems {
+  align-items: center;
+}
+
 .footerItems a {
   color: #000000;
   font-family: WorkSans-Regular;
@@ -375,6 +390,10 @@ footer {
   padding-top: 2em;
   padding-bottom: 2em;
   text-decoration: none;
+}
+
+.footerItems img {
+  max-height: 30px;
 }
 
 .contactButton {
