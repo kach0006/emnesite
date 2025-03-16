@@ -169,7 +169,7 @@ nav {
 }
 
 .bannerBoxContent {
-  font-size: smaller;
+  font-size: 12px;
 }
 
 /* Settings for white section below the header and large image banner start*/
@@ -323,11 +323,21 @@ nav {
   text-decoration-thickness: 2px;
 }
 
-.bbBox_4 img {
+.bbGreenBackground {
+  background-color: #41461f;
+  grid-column: 1/5;
+  grid-row: 1/5;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.map {
   border: 5px solid #ffffff;
 }
 
-.bbBox_4 img:hover {
+.map:hover {
   border-color: #000000;
 }
 
@@ -380,32 +390,29 @@ footer {
 }
 
 .footerItems {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
   align-items: center;
+  margin: 2em 5em;
+  gap: 1em 8em;
 }
 
-.footerItems a {
+.footerItems a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.footerItems a,
+.footerItems p {
   color: #000000;
   font-family: WorkSans-Regular;
   font-size: 16px;
-  padding-top: 2em;
-  padding-bottom: 2em;
   text-decoration: none;
 }
 
 .footerItems img {
   max-height: 30px;
-}
-
-.contactButton {
-  padding-left: 5em;
-}
-
-.copyrightTag {
-  grid-column: 4;
-}
-
-.someIcon {
-  padding-right: 5em;
 }
 
 .footerAddress {

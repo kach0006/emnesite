@@ -79,11 +79,6 @@
     font-size: 22px;
   }
 
-  .topBanner {
-    grid-template-columns: 1fr 50%;
-    grid-template-rows: 90% 5% 5%;
-  }
-
   .bannerBoxTip {
     font-size: 12px;
   }
@@ -193,21 +188,15 @@
     order: 1;
   }
 
-  .footerItems {
-    display: flex;
-  }
-
-  .footerItems a {
+  .footerItems a,
+  .footerItems p,
+  footer p {
     font-size: 14px;
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .topBanner {
-    grid-template-columns: 1fr 80%;
-    grid-template-rows: 90% 5% 5%;
-  }
-
   .introSection h1,
   .introSection p {
     max-width: 100%;
