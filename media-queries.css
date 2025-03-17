@@ -10,6 +10,12 @@
 }
 
 @media screen and (max-width: 1050px) {
+  .topBanner {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 80% 20% 20%;
+  }
+
   .menu {
     display: none;
   }
@@ -197,6 +203,12 @@
 }
 
 @media screen and (max-width: 600px) {
+  .topBanner {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80% 20% 20%;
+  }
+
   .introSection h1,
   .introSection p {
     max-width: 100%;
