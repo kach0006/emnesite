@@ -333,12 +333,9 @@ nav {
   border-bottom-right-radius: 30px;
 }
 
-.map {
-  border: 5px solid #ffffff;
-}
-
+/* box-shadow copied from getcssscan.com, example 4 under css box shadow examples */
 .map:hover {
-  border-color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 /* Settings for the lower half with info cards end*/
