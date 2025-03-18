@@ -137,6 +137,7 @@ nav {
   background-color: #f8f6f7;
   border: 1px solid #e5decd;
   border-top-left-radius: 30px;
+  height: 100%;
   margin: 0;
 }
 
@@ -147,7 +148,6 @@ nav {
 }
 
 .bannerBox {
-  padding: 5px 5px 5px 15px;
   display: flex;
   gap: 2em;
   align-items: center;
@@ -160,7 +160,6 @@ nav {
   padding: 1px;
   object-fit: cover;
   max-height: 30px;
-  width: auto;
 }
 
 .bannerBox a {
