@@ -92,6 +92,10 @@ li a:hover {
   text-decoration-thickness: 2px;
 }
 
+.bannerImage_2 {
+  display: none;
+}
+
 /*Navigation menu ends */
 
 h1 {
