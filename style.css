@@ -60,7 +60,7 @@ nav img {
   display: flex;
   object-fit: contain;
   height: 150%;
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   top: 25%;
 }
